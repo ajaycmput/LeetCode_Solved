@@ -1,3 +1,9 @@
+"""
+    Name: Nnamdi Ajoku
+    Language: Python
+
+"""
+
 def twoSum(nums, target):
         sorted_list = []
         for i in nums:
