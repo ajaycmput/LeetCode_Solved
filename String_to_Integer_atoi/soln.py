@@ -22,11 +22,11 @@
 def myAtoi(self, s: str) -> int:
     # declare a list that stores all digits
     atoi = ""
-    isDigit = []
     isDigit = {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5,
         "6": 6, "7": 7, "8": 8, "9": 9 }
     sign_multiplier = 1
     int_max = 2**31
+    result = 0
     # check for any leading whitespaces
     for i in s:
         if i == " ":
@@ -54,7 +54,9 @@ def myAtoi(self, s: str) -> int:
         if len(atoi) <= 0:
             atoi = 0
         else:
-            atoi = int(atoi)
+            for k in atoi:
+                result = result * 10 + isDigit[k]
+            atoi = result
     else:
         atoi = 0
 
@@ -69,6 +71,7 @@ def myAtoi(self, s: str) -> int:
         atoi = int_max -1
 
     return atoi
+
 
 
 if __name__ == '__main__':
