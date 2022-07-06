@@ -42,7 +42,7 @@ def romanToInt(self, s: str) -> int:
                         result = result + (V -I) #4
                         i = i + 2
                     elif s[i +1] == 'X':
-                        result = result + (X - I)
+                        result = result + (X - I) #9
                         i = i + 2
                     else: 
                         result = result + I
@@ -53,10 +53,10 @@ def romanToInt(self, s: str) -> int:
                     i = i +1
                 else:
                     if s[i + 1] == 'L':
-                        result = result + (L-X) #4
+                        result = result + (L-X) #40
                         i = i + 2
                     elif s[i +1] == 'C':
-                        result = result + (C-X)
+                        result = result + (C-X) #90
                         i = i + 2
                     else: 
                         result = result + X
@@ -67,10 +67,10 @@ def romanToInt(self, s: str) -> int:
                     i = i +1
                 else:
                     if s[i + 1] == 'D':
-                        result = result + (D-C) #4
+                        result = result + (D-C) #400
                         i = i + 2
                     elif s[i +1] == 'M':
-                        result = result + (M-C)
+                        result = result + (M-C) #900
                         i = i + 2
                     else: 
                         result = result + C
