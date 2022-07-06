@@ -21,7 +21,7 @@ Given a roman numeral, convert it to an integer.
 
 """
 def romanToInt(self, s: str) -> int:
-        # define roman numerals
+        # define roman numerals, INITIALIZATIONS
         I = 1
         V = 5
         X = 10
