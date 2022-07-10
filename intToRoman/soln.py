@@ -26,7 +26,7 @@
     Given an integer, convert it to a roman numeral.
 
 """
-def intToRoman(self, num: int) -> str:
+def intToRoman(num: int) -> str:
     result = ""
     while(num != 0):
         if num >= 1000:
