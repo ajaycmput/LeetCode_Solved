@@ -8,7 +8,7 @@
 
 """
 
-def longestCommonPrefix(sstrs):
+def longestCommonPrefix(strs):
         res = ""
 
         for i in range(len(strs[0])):
