@@ -8,9 +8,9 @@
 
     Return the number of hills and valleys in nums.
 
-    Code is faster than 80% of solutions
+    Code is faster than 99.52% of solutions
 
-    
+
 
 """
 
