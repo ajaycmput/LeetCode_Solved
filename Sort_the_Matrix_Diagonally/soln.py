@@ -15,15 +15,15 @@
 
     section, we move by increasing the columns by 1. 
 
-    Two loops are needed, the first one is to get to a column, the second one is to move diagonally in that column. When moving diagonaaly, i increase
+    Two loops are needed, the first one is to get to a column, the second one is to move diagonally from that column. When moving diagonaaly, I increase
     
     the row and column by 1 , and store its index and value as a key-value pair in a dictionary.
 
-    < This is t ensure I keep track of the indices >. I stored the values in a dynamically changing ( temporary ) list and looped through the dictionary, with the original 
+    < This is to ensure I keep track of the indices >. I stored the values in a dynamically changing ( temporary ) list and looped through the dictionary, with the original 
 
     index of the matrix and simply appended the increasing index of the list as its value: mat[key1][key2] = track[key1,key2]
 
-    I did the same thing to the leftmost side, buy increasing the row from top to bottom.
+    I did the same thing to the leftmost side, but by increasing the row from top to bottom.
 
 
 """
