@@ -23,7 +23,7 @@
 
     index of the matrix and simply appended the increasing index of the list as its value: mat[key1][key2] = track[key1,key2]
 
-    I did the same thing to the leftmost side, but by increasing the row from top to bottom.
+    I did the same thing to the leftmost side, but by increasing the row as we move from top to bottom.
 
 
 """
