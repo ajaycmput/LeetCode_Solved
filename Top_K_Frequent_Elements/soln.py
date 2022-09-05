@@ -7,7 +7,7 @@
     return the k most frequent elements. You may return the answer in any order.
 
 """
-
+import operator
 def topKFrequent(nums, k):
     
     # create dict to store frequency of nums
